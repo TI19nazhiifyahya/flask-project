@@ -2,7 +2,6 @@ from flask import Flask
 from markupsafe import escape
 app = Flask(__name__)
 
-@app.route('/')
 @app.route('/user/<username>')
 def show_user_profile(username):
     return 'User %s'% escape(username)

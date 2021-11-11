@@ -8,4 +8,4 @@ def projects():
     
 @app.route('/about')
 def about():
-    return 'the aboud page'
+    return 'the about page'

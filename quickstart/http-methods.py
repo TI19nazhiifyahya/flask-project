@@ -9,9 +9,8 @@ def success(name):
 def login():
     print(request.method)
     if request.method == 'POST':
-        user = request.form('nm')
+        user = request.form['nm']
         return redirect(url_for('success', name = user))
     else:
-        print("Masuk Sini")
         user = request.args.get('nm')
         return redirect(url_for('success', name = user))
